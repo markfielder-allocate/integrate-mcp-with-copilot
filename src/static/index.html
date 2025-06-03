@@ -15,6 +15,13 @@
     <main>
       <section id="activities-container">
         <h3>Available Activities</h3>
+        <div class="filter-container">
+          <label for="category-filter">Filter by Category:</label>
+          <select id="category-filter">
+            <option value="All">All Categories</option>
+            <!-- Categories will be loaded here -->
+          </select>
+        </div>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
@@ -38,6 +45,45 @@
           <button type="submit">Sign Up</button>
         </form>
         <div id="message" class="hidden"></div>
+      </section>
+
+      <section id="attendance-container">
+        <h3>Record Attendance</h3>
+        <form id="attendance-form">
+          <div class="form-group">
+            <label for="attendance-email">Student Email:</label>
+            <input type="email" id="attendance-email" required placeholder="your-email@mergington.edu" />
+          </div>
+          <div class="form-group">
+            <label for="attendance-activity">Select Activity:</label>
+            <select id="attendance-activity" required>
+              <option value="">-- Select an activity --</option>
+              <!-- Activity options will be loaded here -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="attendance-date">Date:</label>
+            <input type="date" id="attendance-date" required />
+          </div>
+          <button type="submit">Record Attendance</button>
+        </form>
+        <div id="attendance-message" class="hidden"></div>
+      </section>
+
+      <section id="report-container">
+        <h3>Activity Duration Report</h3>
+        <form id="report-form">
+          <div class="form-group">
+            <label for="report-email">Student Email:</label>
+            <input type="email" id="report-email" required placeholder="your-email@mergington.edu" />
+          </div>
+          <button type="submit">Generate Report</button>
+        </form>
+        <div id="report-results" class="hidden">
+          <h4>Activity Report</h4>
+          <div id="report-content"></div>
+          <div id="report-summary"></div>
+        </div>
       </section>
     </main>
 

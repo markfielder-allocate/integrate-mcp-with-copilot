@@ -198,3 +198,97 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Category filters */
+.filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-container label {
+  font-weight: bold;
+}
+
+.filter-container select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Activity cards - category labels */
+.category-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 8px;
+  color: white;
+}
+
+.category-Sports {
+  background-color: #4caf50;
+}
+
+.category-Academic {
+  background-color: #2196f3;
+}
+
+.category-Arts {
+  background-color: #f44336;
+}
+
+.category-Games {
+  background-color: #ff9800;
+}
+
+/* Duration display */
+.duration-info {
+  font-style: italic;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Report styling */
+#report-results {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#report-content {
+  margin: 15px 0;
+}
+
+.report-activity {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.report-activity h5 {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#report-summary {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid #ddd;
+  font-weight: bold;
+}
+
+.report-category {
+  margin-right: 10px;
+}
+
+.attendance-stat {
+  margin-top: 5px;
+  color: #666;
+}
